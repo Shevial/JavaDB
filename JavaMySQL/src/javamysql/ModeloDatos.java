@@ -4,7 +4,7 @@ public class ModeloDatos {
     private Integer id;
     private String nombre;
     private Integer edad;
-    private String curso;
+    private String servicio;
 
     public void setId(Integer id) {
         this.id = id;
@@ -18,8 +18,8 @@ public class ModeloDatos {
         this.edad = edad;
     }
 
-    public void setCurso(String curso) {
-        this.curso = curso;
+    public void setServicio(String servicio) {
+        this.servicio = servicio;
     }
 
     public Integer getId() {
@@ -34,8 +34,8 @@ public class ModeloDatos {
         return edad;
     }
 
-    public String getCurso() {
-        return curso;
+    public String getServicio() {
+        return servicio;
     }
 
    
