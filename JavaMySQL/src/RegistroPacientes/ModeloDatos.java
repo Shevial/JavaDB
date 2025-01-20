@@ -1,4 +1,4 @@
-package javamysql;
+package RegistroPacientes;
 
 public class ModeloDatos {
     private Integer id;

@@ -1,4 +1,4 @@
-package javamysql;
+package RegistroPacientes;
 
 import javax.swing.JOptionPane;
 
