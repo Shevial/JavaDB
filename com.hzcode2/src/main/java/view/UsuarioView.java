@@ -16,20 +16,33 @@ public class UsuarioView {
 		System.out.println("3 --- View usuario");
 
 		int menu = lector.nextInt();
-		lector.nextLinr(); //limpia buffer
+		lector.nextLine(); //limpia buffer
 
 		switch (menu) {
 			case 1:
 				System.out.println("Introduce name");
-				String name = lector.nextInt();
+				String name = lector.nextLine();
 
 				System.out.println("Introduce surname");
-				String surname = lector.nextInt();
+				String surname = lector.nextLine();
 
 				System.out.println("Introduce City");
-				String city = lector.nextInt();
+				String city = lector.nextLine();
 
-
+				String usuario = new UsuarioController().createUsuario(name, surname, city);
+			case 2:
+				System.out.println("Delete usuario");
+				System.out.println("Introduce ID para borrar");
+				int opcion = lector.nextInt();
+				if (opcion != null) {
+					System.out.println("Borrando usuario con Id " + opcion);
+					String usuario = new UsuarioController().deleteUsuario(4);
+				}
+				else {
+					System.out.println("El usuario con Id" + opcion + " no existe");
+				}
+			case 3:
+				System.out.println("Delete usuario");
 
 
 		}
@@ -38,9 +51,7 @@ public class UsuarioView {
 
 
 
-		//String usuario = new UsuarioController().createUsuario("Luisa","Lebrel","Sevilla");
-		//String usuario = new UsuarioController().deleteUsuario(4);
-		
+
 		//String usuario = new UsuarioController().updateUsuario(1, "Rodrigo", "Díaz", "Guadalajara");
 		String usuario = new UsuarioController().getUsuario(1);
 		System.out.println(usuario);
