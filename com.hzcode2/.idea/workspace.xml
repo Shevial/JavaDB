@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1bbed0c9-aa56-4ce0-a17e-0ec16b4e923e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controllers/UsuarioController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controllers/UsuarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hibernate.cfg.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/models/Usuario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/models/Usuario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/view/UsuarioView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/view/UsuarioView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.hzcode2/com.hzcode2/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/maven/com.hzcode2/com.hzcode2/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/controllers/UsuarioController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/controllers/UsuarioController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/models/Usuario.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/models/Usuario.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/view/UsuarioView.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/view/UsuarioView.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +65,7 @@
       <updated>1741953007089</updated>
       <workItem from="1741953008429" duration="35000" />
       <workItem from="1742124653354" duration="3376000" />
-      <workItem from="1742128070220" duration="2420000" />
+      <workItem from="1742128070220" duration="4413000" />
     </task>
     <servers />
   </component>
