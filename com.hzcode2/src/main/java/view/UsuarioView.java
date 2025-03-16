@@ -1,6 +1,7 @@
 package view;
 import java.util.Scanner;
 import controllers.UsuarioController;
+import models.Usuario;
 
 public class UsuarioView {
 
@@ -8,6 +9,8 @@ public class UsuarioView {
 
 
 		Scanner lector = new Scanner (System.in);
+
+		UsuarioController usuarioController = new UsuarioController(); // Única instancia
 
 
 		System.out.println("User introduce one opción");
@@ -31,46 +34,62 @@ public class UsuarioView {
 				System.out.println("Introduce City");
 				String city = lector.nextLine();
 
-				String usuario = new UsuarioController().createUsuario(name, surname, city);
+				String usuarioCreate = usuarioController.createUsuario(name, surname, city);
+				System.out.println("User created with name " + name + " and surname " + surname + " and city " + city );
+
+				break;
 			case 2:
 				System.out.println("Delete user");
 				System.out.println("Introduce ID for deleting a user");
-				int opcion = lector.nextInt();
-				if (opcion != null) {
-					System.out.println("Deleting user with Id " + opcion);
-					String usuario = new UsuarioController().deleteUsuario(4);
-				}
-				else {
-					System.out.println("El usuario con Id" + opcion + " no existe");
-				}
+				int idEdit = lector.nextInt();
+				lector.nextLine(); //limpia buffer
+
+					System.out.println("Deleting user with Id " + idEdit);
+					String usuarioDel = new UsuarioController().deleteUsuario(idEdit);
+
+				break;
 			case 3:
+
 				System.out.println("Edit user");
 				System.out.println("Introduce ID for editing a user");
-				int id = lector.nextInt();
-				System.out.println("Editing user with Id " + id);
+				int idE = lector.nextInt();
+				lector.nextLine(); //limpia buffer
+
+				System.out.println("Editing user with Id " + idE);
 				System.out.println("Introduce new name");
-				String name = lector.nextLine();
+				String nameE = lector.nextLine();
 
 				System.out.println("Introduce new surname");
-				String surname = lector.nextLine();
+				String surnameE = lector.nextLine();
 
 				System.out.println("Introduce new City");
-				String city = lector.nextLine();
+				String cityE = lector.nextLine();
 
-				System.out.println("Editing user with Id " + id + "New name is " + name + " New surname is " + surname + " New city is " + city);
-				String usuario = new UsuarioController().updateUsuario(id, name, surname, city);
+				System.out.println("Editing user with Id " + idE + "New name is " + nameE + " New surname is " + surnameE + " New city is " + cityE);
+				String usuarioEdit = usuarioController.updateUsuario(idE, nameE, surnameE, cityE);
+				System.out.println("User updated: " + usuarioEdit);
 
+
+				break;
 			case 4:
 				System.out.println("Retrieve  user");
 				System.out.println("Introduce ID for retrieving a user");
-				int opcion = lector.nextLine();
-				System.out.println("Retrieving  user with Id " + opcion);
-				String usuario = new UsuarioController().getUsuario(opcion);
-				System.out.println(usuario);
+				int idR = lector.nextInt();
+				lector.nextLine(); //limpia buffer
 
+				System.out.println("Retrieving  user with Id " + idR);
+				String usuarioRetrieve = new UsuarioController().getUsuario(idR);
+				System.out.println(usuarioRetrieve);
 
+				break;
+
+			default:
+				System.out.println("Invalid option");
+				break;
 
 		}
+
+		lector.close();
 
 
 
